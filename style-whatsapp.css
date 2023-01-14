@@ -1,0 +1,272 @@
+:root{
+    /*--color-text: #1c1e21;*/
+    --color-green: #25d366;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-text);
+}
+
+body{
+    background-color: #e6ffda;
+}
+
+nav{
+    background-color: #ffffff;
+    display:flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+}
+
+nav ul{
+    display:flex;
+    list-style: none;
+}
+
+.link-primary {
+    text-decoration: none;
+    margin: 0 20px;
+    position: relative;
+  }
+
+.link-primary::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-green);
+    transition: width 0.4s ease-out;
+  }
+
+.link-primary:hover::after {
+    width: 100%
+}
+
+
+.btn-primary{
+    background-color: var(--color-green);
+    font-size: 1rem;
+    padding:1em 1.5em;
+    border-radius: 50px;
+    border: 1px solid var(--color-text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.navbar-download{
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+aside{
+    background-color: #ffffff;
+    padding:24px;
+    display:none;
+    
+}
+
+aside a{
+    text-decoration: none;
+}
+
+aside ul{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+aside ul li{
+    text-decoration: none;
+    border: 1px solid var(--color-text);
+    max-width: 242px;
+    padding:24px;
+    border-radius: 24px;
+}
+
+#navbar-secondary{
+    display:none;
+}
+
+@media screen and(max-width:1200px){
+    #navbar-main{
+        display:none;
+    }
+    #navbar-secondary{
+        display:flex;
+    }
+}
+
+li a span{
+    text-decoration: none;
+    width: 30px;
+    color: solid var(--color-text);
+    font-size: larger;
+
+}
+
+div.text-big{
+    letter-spacing:-1px;
+    line-height: 1;
+    width:100%;
+    display:flex;
+    padding: 25px;
+    box-sizing: border-box;
+    align-items: left;
+    justify-content: space-between;
+    
+}
+div.bold{
+    text-align:left ;
+    font-size: 30px;
+    display:flex;
+    flex-direction:column;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 20px;
+}
+div.sentence{
+    word-wrap: break-word;
+    font-weight: 400;
+    box-sizing: border-box;
+    text-align:left;
+    font-size: 19px;
+    line-height: 22px;
+    margin:0;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-right: 120px;
+    padding-left:220px;
+    display:flex;
+    flex-direction: column;
+}
+div.terms{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-right: 120px;
+    padding-left:220px;
+    font-size: 14px;
+    line-height: 17px; 
+}
+div.together{
+    text-align: left;
+}
+div.downloaders ul{
+    display:flex;
+    list-style:none;
+    text-align: center;
+    column-gap: 30px;
+    row-gap: 24px;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 200px;
+    margin-right:200px;
+    margin-bottom: 55px;
+    color: #ffffff;
+    
+
+}
+
+
+.downloaders ul li p1{
+    font-size: 12px;
+}
+.downloaders ul li h1{
+    font-size:48px;
+}
+
+div ul li{
+border: 2px solid;
+border-radius: 25px;
+width:80%;
+height:400px;
+border-spacing: 20px;
+padding:32px;
+background-color:#1c1e21;
+text: #ffffff;
+
+
+
+}
+
+.downloaders ul li:hover{
+    background-color: #25d366;
+    text: #1c1e21;
+}
+
+
+div ul li button{
+    background-color: #fff;
+    font-size: 1rem;
+    color:#1c1e21;
+    padding:0 8px;
+    border:1px solid #fff;
+    border-radius: 60px;
+    cursor:pointer;
+    align-items: center;
+    column-gap: 15px;
+    height: 48px;
+    min-width: 201px;
+
+}
+div.visit{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+
+.downpage{
+    display:flexbox;
+    padding-left: 100px;
+    padding-bottom: 200px;
+    padding-right: 600px;
+    text-align:left;
+    font-size: 60px;
+    align-items: left;
+    box-sizing: border-box;
+
+    
+}
+.downpage h1{
+    font-size: 18px;
+    padding-right: 200px;
+}
+
+.photos{
+    display:flex;
+    flex-direction:column;
+   
+}
+.second{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    padding-right:200px;
+    padding-left:200px;
+    padding-top:50px;
+    background-color: #fff;
+    
+}
+
+
+
+
+
+
+        
